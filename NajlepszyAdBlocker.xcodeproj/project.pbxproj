@@ -13,10 +13,37 @@
 		BFFC886D29D064BA00D4B889 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC886B29D064BA00D4B889 /* Main.storyboard */; };
 		BFFC886F29D064BB00D4B889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFC886E29D064BB00D4B889 /* Assets.xcassets */; };
 		BFFC887229D064BB00D4B889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC887029D064BB00D4B889 /* LaunchScreen.storyboard */; };
+		BFFC888029D064FC00D4B889 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = BFFC887F29D064FC00D4B889 /* blockerList.json */; };
+		BFFC888229D064FC00D4B889 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC888129D064FC00D4B889 /* ContentBlockerRequestHandler.swift */; };
+		BFFC888629D064FC00D4B889 /* ADB.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BFFC887D29D064FC00D4B889 /* ADB.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BFFC888429D064FC00D4B889 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFFC885A29D064BA00D4B889 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFC887C29D064FC00D4B889;
+			remoteInfo = ADB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFFC888A29D064FC00D4B889 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFFC888629D064FC00D4B889 /* ADB.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		BFFC886229D064BA00D4B889 /* NaujlepszyAdBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaujlepszyAdBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFC886229D064BA00D4B889 /* NajlepszyAdBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NajlepszyAdBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC886529D064BA00D4B889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFFC886729D064BA00D4B889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BFFC886929D064BA00D4B889 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +51,21 @@
 		BFFC886E29D064BB00D4B889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFC887129D064BB00D4B889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFFC887329D064BB00D4B889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFC887D29D064FC00D4B889 /* ADB.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ADB.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFC887F29D064FC00D4B889 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		BFFC888129D064FC00D4B889 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		BFFC888329D064FC00D4B889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BFFC885F29D064BA00D4B889 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFC887A29D064FC00D4B889 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +78,8 @@
 		BFFC885929D064BA00D4B889 = {
 			isa = PBXGroup;
 			children = (
-				BFFC886429D064BA00D4B889 /* NaujlepszyAdBlocker */,
+				BFFC886429D064BA00D4B889 /* NajlepszyAdBlocker */,
+				BFFC887E29D064FC00D4B889 /* ADB */,
 				BFFC886329D064BA00D4B889 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +87,13 @@
 		BFFC886329D064BA00D4B889 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFFC886229D064BA00D4B889 /* NaujlepszyAdBlocker.app */,
+				BFFC886229D064BA00D4B889 /* NajlepszyAdBlocker.app */,
+				BFFC887D29D064FC00D4B889 /* ADB.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFFC886429D064BA00D4B889 /* NaujlepszyAdBlocker */ = {
+		BFFC886429D064BA00D4B889 /* NajlepszyAdBlocker */ = {
 			isa = PBXGroup;
 			children = (
 				BFFC886529D064BA00D4B889 /* AppDelegate.swift */,
@@ -64,28 +104,57 @@
 				BFFC887029D064BB00D4B889 /* LaunchScreen.storyboard */,
 				BFFC887329D064BB00D4B889 /* Info.plist */,
 			);
-			path = NaujlepszyAdBlocker;
+			path = NajlepszyAdBlocker;
+			sourceTree = "<group>";
+		};
+		BFFC887E29D064FC00D4B889 /* ADB */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC887F29D064FC00D4B889 /* blockerList.json */,
+				BFFC888129D064FC00D4B889 /* ContentBlockerRequestHandler.swift */,
+				BFFC888329D064FC00D4B889 /* Info.plist */,
+			);
+			path = ADB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFFC886129D064BA00D4B889 /* NaujlepszyAdBlocker */ = {
+		BFFC886129D064BA00D4B889 /* NajlepszyAdBlocker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFFC887629D064BB00D4B889 /* Build configuration list for PBXNativeTarget "NaujlepszyAdBlocker" */;
+			buildConfigurationList = BFFC887629D064BB00D4B889 /* Build configuration list for PBXNativeTarget "NajlepszyAdBlocker" */;
 			buildPhases = (
 				BFFC885E29D064BA00D4B889 /* Sources */,
 				BFFC885F29D064BA00D4B889 /* Frameworks */,
 				BFFC886029D064BA00D4B889 /* Resources */,
+				BFFC888A29D064FC00D4B889 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFFC888529D064FC00D4B889 /* PBXTargetDependency */,
+			);
+			name = NajlepszyAdBlocker;
+			productName = NaujlepszyAdBlocker;
+			productReference = BFFC886229D064BA00D4B889 /* NajlepszyAdBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFFC887C29D064FC00D4B889 /* ADB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFC888729D064FC00D4B889 /* Build configuration list for PBXNativeTarget "ADB" */;
+			buildPhases = (
+				BFFC887929D064FC00D4B889 /* Sources */,
+				BFFC887A29D064FC00D4B889 /* Frameworks */,
+				BFFC887B29D064FC00D4B889 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NaujlepszyAdBlocker;
-			productName = NaujlepszyAdBlocker;
-			productReference = BFFC886229D064BA00D4B889 /* NaujlepszyAdBlocker.app */;
-			productType = "com.apple.product-type.application";
+			name = ADB;
+			productName = ADB;
+			productReference = BFFC887D29D064FC00D4B889 /* ADB.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,9 +169,12 @@
 					BFFC886129D064BA00D4B889 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					BFFC887C29D064FC00D4B889 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
-			buildConfigurationList = BFFC885D29D064BA00D4B889 /* Build configuration list for PBXProject "NaujlepszyAdBlocker" */;
+			buildConfigurationList = BFFC885D29D064BA00D4B889 /* Build configuration list for PBXProject "NajlepszyAdBlocker" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFFC886129D064BA00D4B889 /* NaujlepszyAdBlocker */,
+				BFFC886129D064BA00D4B889 /* NajlepszyAdBlocker */,
+				BFFC887C29D064FC00D4B889 /* ADB */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +201,14 @@
 				BFFC887229D064BB00D4B889 /* LaunchScreen.storyboard in Resources */,
 				BFFC886F29D064BB00D4B889 /* Assets.xcassets in Resources */,
 				BFFC886D29D064BA00D4B889 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFC887B29D064FC00D4B889 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFC888029D064FC00D4B889 /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFFC887929D064FC00D4B889 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFC888229D064FC00D4B889 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFFC888529D064FC00D4B889 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFC887C29D064FC00D4B889 /* ADB */;
+			targetProxy = BFFC888429D064FC00D4B889 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BFFC886B29D064BA00D4B889 /* Main.storyboard */ = {
@@ -283,6 +380,7 @@
 		BFFC887729D064BB00D4B889 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +409,7 @@
 		BFFC887829D064BB00D4B889 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,10 +435,62 @@
 			};
 			name = Release;
 		};
+		BFFC888829D064FC00D4B889 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 456XKF38GA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADB;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariuszdziuba.NaujlepszyAdBlocker.ADB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFFC888929D064FC00D4B889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 456XKF38GA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADB/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADB;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariuszdziuba.NaujlepszyAdBlocker.ADB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFFC885D29D064BA00D4B889 /* Build configuration list for PBXProject "NaujlepszyAdBlocker" */ = {
+		BFFC885D29D064BA00D4B889 /* Build configuration list for PBXProject "NajlepszyAdBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFFC887429D064BB00D4B889 /* Debug */,
@@ -348,11 +499,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFFC887629D064BB00D4B889 /* Build configuration list for PBXNativeTarget "NaujlepszyAdBlocker" */ = {
+		BFFC887629D064BB00D4B889 /* Build configuration list for PBXNativeTarget "NajlepszyAdBlocker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFFC887729D064BB00D4B889 /* Debug */,
 				BFFC887829D064BB00D4B889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFC888729D064FC00D4B889 /* Build configuration list for PBXNativeTarget "ADB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFC888829D064FC00D4B889 /* Debug */,
+				BFFC888929D064FC00D4B889 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

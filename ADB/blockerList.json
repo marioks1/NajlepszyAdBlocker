@@ -1,0 +1,11 @@
+[
+    {
+        "action": {
+            "type": "css-display-none"
+            "selector": "/adframe.$~script,~xmlhttprequest,domain=~adframe.com"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]
